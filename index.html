@@ -14,7 +14,7 @@
     <div id="app">
 
         <div class="container">
-        <input v-model='filtroCategoria' class='my-4' type="text" placeholder="Precio">
+        <input v-model='filtroCategoria' class='my-4' type="text" placeholder="Categoría">
         El valor de filtroCategoria es: {{filtroCategoria}}    
         <div class="row">
                 <div class="producto col-4" v-for='(producto, clave) in productos' v-if="producto.categoria.toLowerCase() == filtroCategoria.toLowerCase() || !filtroCategoria">
